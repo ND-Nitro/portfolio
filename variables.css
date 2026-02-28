@@ -1,0 +1,32 @@
+:root {
+  --bg1: #117a65;
+  --bg2: #1fe0b9;
+
+  --text: #fff;
+
+  --container-hero: 980px;
+  --container-app: 960px;
+  --container-perm: 1200px;
+
+  --panel-bg: rgba(5, 35, 31, 0.85);
+  --panel-stroke: rgba(0, 0, 0, 0.55);
+  --shadow-panel-1: 0 8px 0 rgba(0, 0, 0, 0.25);
+  --shadow-panel-2: 0 14px 24px rgba(0, 0, 0, 0.25);
+
+  --card-bg: #e8e8e8;
+  --card-text: #111;
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  --btn-bg: #0b2f2a;
+  --btn-hover: #13463f;
+  --shadow-btn: 0 4px 0 rgba(0, 0, 0, 0.3);
+
+  --space-1: 14px;
+  --space-2: 18px;
+  --space-3: 24px;
+  --space-4: 26px;
+  --space-5: 56px;
+
+  --radius: 4px;
+  --radius: 6px;
+}

@@ -231,6 +231,9 @@ h1 {
   border-radius: 6px;
   background: #ccc;
 }
+#contact p {
+  margin: 8px 0;
+}
 @media (max-width: 900px) {
   .top-panels {
     grid-template-columns: 1fr;

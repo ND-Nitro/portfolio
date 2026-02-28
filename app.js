@@ -50,10 +50,10 @@ document.addEventListener("click", (e) => {
 
 const featuredProjects = [
   {
-    title: "Project 1",
-    desc: "info about my project .",
-    img: "./image/project1.png",
-    github: "https://github.com/USERNAME/REPO1",
+    title: "Sience musem",
+    desc: "This was a prosject that we got to test our HTML and CSS skills after months of training.",
+    img: "./image/Skjermbilde 2026-02-28 123938.jpg",
+    Github: "https://nd-nitro.github.io/semester-project-1-/",
   },
   {
     title: "Project 2",

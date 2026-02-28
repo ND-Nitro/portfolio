@@ -23,7 +23,7 @@ body {
 .top-panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 56px; /* mer luft som i figma */
+  gap: 56px;
   margin-top: 24px;
   align-items: start;
 }
@@ -144,10 +144,6 @@ h1 {
   transform: translateY(-3px);
   background: #13463f;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
   .top-panels {

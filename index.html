@@ -22,12 +22,14 @@
         </div>
 
         <h1 class="title">Steffen Heltne</h1>
-        <p class="subtitle">Frontend Developer</p>
+        <p class="subtitle">Frontend junior Developer</p>
 
         <nav class="nav" aria-label="Main menu">
-          <a class="btn left" href="#/" data-link>Home</a>
-          <a class="btn center" href="#/projects" data-link>Projects</a>
-          <a class="btn right" href="#/contact" data-link>Contact</a>
+          <a class="btn left" href="#featured" data-scroll>Projects</a>
+
+          <a class="btn center" href="#/cv" data-link>CV</a>
+
+          <a class="btn right" href="#contact" data-scroll>Contact</a>
         </nav>
 
         <section class="top-panels">
@@ -49,6 +51,75 @@
         </section>
       </div>
     </header>
+
+    <section class="perm">
+      <section class="section section--big" id="featured">
+        <h2>Featured Projects</h2>
+
+        <div class="carousel" aria-label="Featured projects carousel">
+          <button
+            class="carousel-btn"
+            type="button"
+            data-action="prev"
+            aria-label="Previous project"
+          >
+            ‹
+          </button>
+
+          <div class="carousel-frame">
+            <img id="carouselImg" src="" alt="" />
+
+            <div class="carousel-meta">
+              <h3 id="carouselTitle"></h3>
+              <p id="carouselDesc"></p>
+
+              <div class="actions">
+                <a
+                  class="btn center"
+                  id="carouselGithub"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-btn"
+            type="button"
+            data-action="next"
+            aria-label="Next project"
+          >
+            ›
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2>About me</h2>
+        <p>
+          Write a short paragraph about you, your hobbies, and what you enjoy
+          building. (You can tweak this later.)
+        </p>
+
+        <h3>My private library</h3>
+        <div class="library">
+          <img src="./image/library1.jpg" alt="Private library photo 1" />
+          <img src="./image/library2.jpg" alt="Private library photo 2" />
+          <img src="./image/library3.jpg" alt="Private library photo 3" />
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>GitHub:</strong> github.com/yourusername</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+      </section>
+    </section>
 
     <main id="app" class="app" aria-live="polite"></main>
 

@@ -1,12 +1,6 @@
 const routes = {
   "/cv": `
-    <section class="section">
-      <h2>CV</h2>
-      <p>Legg inn CV her (tekst, punkter, erfaring, utdanning, osv).</p>
-
-      <h2 style="margin-top: 24px;">Open Application</h2>
-      <p>Legg inn en åpen søknad her.</p>
-    </section>
+   
   `,
 };
 

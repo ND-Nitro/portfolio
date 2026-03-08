@@ -148,7 +148,7 @@ document.addEventListener("click", (e) => {
   if (btn.dataset.action === "prev") prevSlide();
 
   if (btn.dataset.action === "watchVideo") {
-    alert("Watch video clicked (adding a link later.).");
+    alert("Video Will be added when its done.");
   }
 });
 

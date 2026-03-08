@@ -1,19 +1,19 @@
 :root {
-  --bg1: #117a65;
-  --bg2: #1fe0b9;
+  --bg1: #0b5a4b;
+  --bg2: #0c6352;
 
-  --text: #fff;
+  --text: #ffffff;
 
   --container-hero: 980px;
   --container-app: 960px;
   --container-perm: 1200px;
 
-  --panel-bg: rgba(5, 35, 31, 0.85);
-  --panel-stroke: rgba(0, 0, 0, 0.55);
+  --panel-bg: rgba(5, 35, 31, 0.9);
+  --panel-stroke: rgba(0, 0, 0, 0.6);
   --shadow-panel-1: 0 8px 0 rgba(0, 0, 0, 0.25);
   --shadow-panel-2: 0 14px 24px rgba(0, 0, 0, 0.25);
 
-  --btn-bg: #0b2f2a;
+  --btn-bg: #082824;
   --btn-hover: #13463f;
   --shadow-btn: 0 4px 0 rgba(0, 0, 0, 0.3);
 

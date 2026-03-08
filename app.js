@@ -9,7 +9,7 @@ const routes = {
           <p>Updated PDF version of my CV.</p>
           <a
             class="btn left btn-small"
-            href="./docs/cv.pdf"
+            href="./Documents/cv-steffen.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -22,7 +22,7 @@ const routes = {
           <p>A short introduction to who I am and what I want to build.</p>
           <a
             class="btn center btn-small"
-            href="./docs/open-application.pdf"
+            href="./Documents/open-application.pdf"
             target="_blank"
             rel="noreferrer"
           >

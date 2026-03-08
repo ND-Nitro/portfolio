@@ -19,7 +19,7 @@ const routes = {
 
         <article class="doc-card doc-card--two">
           <h3>Open Application</h3>
-          <p>A short introduction to who I am and what I want to build.</p>
+          <p>My application for a future manager.</p>
           <a
             class="btn center btn-small"
             href="./Documents/open-application.pdf"
@@ -32,10 +32,10 @@ const routes = {
 
         <article class="doc-card doc-card--three">
           <h3>Project Reflection</h3>
-          <p>Notes on the featured projects and how I would improve them.</p>
+          <p>Reflection on what i have changed in my projects.</p>
           <a
             class="btn right btn-small"
-            href="./docs/reflection.pdf"
+            href="./Documents/reflection.pdf"
             target="_blank"
             rel="noreferrer"
           >

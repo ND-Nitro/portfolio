@@ -338,6 +338,7 @@ h1 {
 
 .doc-card h3,
 .doc-card p {
+  text-align: center;
   margin: 0;
 }
 
@@ -350,6 +351,7 @@ h1 {
   font-size: 1rem;
   line-height: 1.5;
   max-width: 34ch;
+  margin: 0 auto;
 }
 
 .doc-card .btn {

@@ -102,7 +102,7 @@ const featuredProjects = [
   {
     title: "Semester JavaScript Project",
     desc: "A JavaScript-based semester project focused on dynamic functionality.",
-    img: "./image/project3.png",
+    img: "./image/Skjermbilde 2026-03-05 202812.jpg",
     live: "https://nd-nitro.github.io/semester-javascript/",
     github: "https://github.com/ND-Nitro/semester-javascript",
   },

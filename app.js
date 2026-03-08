@@ -1,6 +1,49 @@
 const routes = {
   "/cv": `
-   
+    <section class="section docs-section">
+      <h2>Documents</h2>
+
+      <div class="docs-stair">
+        <article class="doc-card doc-card--one">
+          <h3>CV / Resume</h3>
+          <p>Updated PDF version of my CV.</p>
+          <a
+            class="btn left btn-small"
+            href="./docs/cv.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open
+          </a>
+        </article>
+
+        <article class="doc-card doc-card--two">
+          <h3>Open Application</h3>
+          <p>A short introduction to who I am and what I want to build.</p>
+          <a
+            class="btn center btn-small"
+            href="./docs/open-application.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open
+          </a>
+        </article>
+
+        <article class="doc-card doc-card--three">
+          <h3>Project Reflection</h3>
+          <p>Notes on the featured projects and how I would improve them.</p>
+          <a
+            class="btn right btn-small"
+            href="./docs/reflection.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open
+          </a>
+        </article>
+      </div>
+    </section>
   `,
 };
 
@@ -8,7 +51,6 @@ const app = document.getElementById("app");
 
 function getPath() {
   const hash = window.location.hash || "#";
-
   if (hash.startsWith("#/")) return hash.slice(1);
   return "";
 }
@@ -44,22 +86,25 @@ document.addEventListener("click", (e) => {
 
 const featuredProjects = [
   {
-    title: "Sience musem",
-    desc: "This was a prosject that we got to test our HTML and CSS skills after months of training.",
+    title: "Science Museum Semester Project 1",
+    desc: "A museum website created for a customer as a school project.",
     img: "./image/Skjermbilde 2026-02-28 123938.jpg",
-    Github: "https://nd-nitro.github.io/semester-project-1-/",
+    live: "https://nd-nitro.github.io/semester-project-1-/",
+    github: "https://github.com/ND-Nitro/semester-project-1-",
   },
   {
-    title: "Project 2",
-    desc: "info about my project .",
-    img: "./image/project2.png",
-    github: "https://github.com/USERNAME/REPO2",
+    title: "Rainydays",
+    desc: "An online store project built with HTML and CSS.",
+    img: "./image/Rainydays.jpg",
+    live: "https://nd-nitro.github.io/html.css-steffen/",
+    github: "https://github.com/ND-Nitro/html.css-steffen",
   },
   {
-    title: "Project 3",
-    desc: "info about my project.",
+    title: "Semester JavaScript Project",
+    desc: "A JavaScript-based semester project focused on dynamic functionality.",
     img: "./image/project3.png",
-    github: "https://github.com/USERNAME/REPO3",
+    live: "https://nd-nitro.github.io/semester-javascript/",
+    github: "https://github.com/ND-Nitro/semester-javascript",
   },
 ];
 
@@ -70,18 +115,18 @@ function renderCarousel() {
   const title = document.getElementById("carouselTitle");
   const desc = document.getElementById("carouselDesc");
   const github = document.getElementById("carouselGithub");
+  const live = document.getElementById("carouselLive");
 
-  if (!img || !title || !desc || !github) return;
+  if (!img || !title || !desc || !github || !live) return;
 
   const p = featuredProjects[currentIndex];
 
   img.src = p.img;
   img.alt = p.title;
-
   title.textContent = p.title;
   desc.textContent = p.desc;
-
-  github.href = p.github;
+  github.href = p.github || "#";
+  live.href = p.live || "#";
 }
 
 function nextSlide() {

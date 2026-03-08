@@ -27,9 +27,7 @@
 
         <nav class="nav" aria-label="Main menu">
           <a class="btn left" href="#featured" data-scroll>Projects</a>
-
           <a class="btn center" href="#/cv" data-link>CV</a>
-
           <a class="btn right" href="#contact" data-scroll>Contact</a>
         </nav>
 
@@ -73,7 +71,17 @@
 
               <div class="actions">
                 <a
-                  class="btn center"
+                  class="btn center btn-compact"
+                  id="carouselLive"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live view
+                </a>
+
+                <a
+                  class="btn center btn-compact"
                   id="carouselGithub"
                   href="#"
                   target="_blank"
@@ -95,71 +103,85 @@
           </button>
         </div>
       </section>
+
       <section class="section" id="about">
         <h2>About me</h2>
 
-        <div class="about-text">
-          <p>
-            I am a technology-driven developer with ADHD and a deep passion for
-            building meaningful digital solutions. My mind is wired to explore,
-            experiment, and hyper-focus on solving problems — and I use that to
-            my advantage in development.
-          </p>
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              I am a technology-driven developer with ADHD and a deep passion
+              for building meaningful digital solutions. My mind is wired to
+              explore, experiment, and hyper-focus on solving problems — and I
+              use that to my advantage in development.
+            </p>
 
-          <p>
-            I dream big. My goal is to become a fullstack developer who can
-            contribute something valuable to the tech world, not just through
-            code, but through thoughtful systems and clean architecture.
-          </p>
+            <p>
+              I dream big. My goal is to become a fullstack developer who can
+              contribute something valuable to the tech world, not just through
+              code, but through thoughtful systems and clean architecture.
+            </p>
 
-          <p>
-            I am especially motivated to create structured and accessible
-            solutions that can support people facing challenges similar to my
-            own. I believe technology should simplify complexity — not add to
-            it.
-          </p>
+            <p>
+              I am especially motivated to create structured and accessible
+              solutions that can support people facing challenges similar to my
+              own. I believe technology should simplify complexity — not add to
+              it.
+            </p>
 
-          <p>
-            I am constantly learning, improving, and refining my skills in
-            frontend development while expanding toward backend technologies.
-            For me, development is more than writing code — it is about building
-            tools that empower people, create clarity, and make a real
-            difference.
-          </p>
+            <p>
+              I am constantly learning, improving, and refining my skills in
+              frontend development while expanding toward backend technologies.
+              For me, development is more than writing code — it is about
+              building tools that empower people, create clarity, and make a
+              real difference.
+            </p>
+          </div>
+
+          <aside class="focus-box" aria-label="Focus areas">
+            <h3>Focus areas</h3>
+            <ul>
+              <li>Clean, structured code (DRY)</li>
+              <li>Mobile-first UI</li>
+              <li>Accessible, user-friendly solutions</li>
+              <li>Problem-solving &amp; continuous learning</li>
+            </ul>
+          </aside>
+        </div>
+        <section class="section" id="contact">
+          <h2>Contact</h2>
+
+          <div class="contact-buttons">
+            <div class="email-box">
+              <a href="mailto:steffenheltne@hotmail.com">
+                steffenheltne@hotmail.com
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="about-buttons">
+          <a
+            class="btn left btn-small"
+            href="https://github.com/ND-Nitro"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            class="btn right btn-small"
+            href="https://linkedin.com/in/steffen-heltne-0451a62a6/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
       </section>
-
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-
-        <ul class="contact-list">
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:steffenheltne@hotmail.com"
-              >steffenheltne@hotmail.com</a
-            >
-          </li>
-          <li>
-            <strong>GitHub:</strong>
-            <a
-              href="https://github.com/ND-Nitro"
-              target="_blank"
-              rel="noreferrer"
-              >github.com/ND-Nitro</a
-            >
-          </li>
-          <li>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://linkedin.com/in/steffen-heltne-0451a62a6/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/steffen-heltne-0451a62a6/
-            </a>
-          </li>
-        </ul>
-      </section>
     </section>
+
+    <main id="app" class="app" aria-live="polite"></main>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -13,10 +13,6 @@
   --shadow-panel-1: 0 8px 0 rgba(0, 0, 0, 0.25);
   --shadow-panel-2: 0 14px 24px rgba(0, 0, 0, 0.25);
 
-  --card-bg: #117a65;
-  --card-text: #111;
-  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.2);
-
   --btn-bg: #0b2f2a;
   --btn-hover: #13463f;
   --shadow-btn: 0 4px 0 rgba(0, 0, 0, 0.3);
@@ -27,6 +23,6 @@
   --space-4: 26px;
   --space-5: 56px;
 
-  --radius: 4px;
-  --radius: 6px;
+  --radius-1: 6px;
+  --radius-2: 12px;
 }

@@ -26,7 +26,7 @@ body {
 
 .top-panels {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-2);
   margin-top: var(--space-3);
   align-items: start;
@@ -144,6 +144,15 @@ h1 {
   background: var(--btn-hover);
 }
 
+.btn-compact {
+  width: 140px;
+}
+
+.btn-small {
+  width: 120px;
+  height: 40px;
+}
+
 .perm {
   max-width: var(--container-perm);
   margin: 0 auto;
@@ -159,7 +168,7 @@ h1 {
   text-align: center;
 }
 
-.section-big {
+.section--big {
   min-height: 300px;
 }
 
@@ -197,6 +206,13 @@ h1 {
   margin-top: 0;
 }
 
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .carousel-btn {
   width: 36px;
   height: 36px;
@@ -213,35 +229,138 @@ h1 {
   background: var(--btn-hover);
 }
 
+#about .about-layout {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
 #about .about-text {
+  text-align: left;
   max-width: 65ch;
   margin: 0 auto;
 }
 
-#aboout p {
+#about p {
   margin: 0 0 12px;
   line-height: 1.6;
 }
 
-#contact .contact-list {
-  list-style: none;
-  padding: 0;
+#about .focus-box {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-stroke);
+  box-shadow: var(--shadow-panel-1) var(--shadow-panel-2);
+  padding: 16px;
+  text-align: left;
+  max-width: 320px;
+  width: 100%;
+  justify-self: center;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+}
+
+#about .focus-box h3 {
+  margin-top: 0;
+}
+
+#about .focus-box ul {
   margin: 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+#about .about-buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#contact .contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.email-box {
+  background: var(--btn-bg);
+  box-shadow: var(--shadow-btn);
+  height: 40px;
+  width: min(92vw, 360px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.email-box:hover {
+  transform: translateY(-3px);
+  background: var(--btn-hover);
+}
+
+.email-box a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.docs-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.docs-section h2 {
+  margin-bottom: 20px;
+}
+
+.docs-stair {
+  display: grid;
+  gap: 16px;
+}
+
+.doc-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-stroke);
+  box-shadow: var(--shadow-panel-1) var(--shadow-panel-2);
+  padding: 16px 18px;
   display: grid;
   gap: 10px;
+  text-align: left;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  width: min(100%, 560px);
+  min-height: 0;
 }
 
-#contact a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.doc-card h3,
+.doc-card p {
+  margin: 0;
 }
 
-#contact p {
-  margin: 8px 0;
+.doc-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.doc-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 34ch;
+}
+
+.doc-card .btn {
+  margin-top: 2px;
 }
 
 @media (min-width: 700px) {
+  .top-panels {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .carousel {
     width: min(90vw, 760px);
     grid-template-columns: 44px 1fr 44px;
@@ -255,14 +374,48 @@ h1 {
   .carousel-meta {
     padding: 16px;
   }
+
+  .docs-stair {
+    gap: 18px;
+  }
+
+  .doc-card {
+    width: min(100%, 620px);
+  }
+
+  .doc-card--two {
+    margin-left: 48px;
+  }
+
+  .doc-card--three {
+    margin-left: 96px;
+  }
+}
+
+@media (min-width: 900px) {
+  #about .about-layout {
+    grid-template-columns: 2fr auto;
+    gap: 24px;
+  }
+
+  #about .focus-box {
+    justify-self: end;
+  }
+
+  .doc-card {
+    width: min(100%, 660px);
+  }
+
+  .doc-card--two {
+    margin-left: 72px;
+  }
+
+  .doc-card--three {
+    margin-left: 144px;
+  }
 }
 
 @media (max-width: 900px) {
-  .top-panels {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-5);
-  }
-
   .panel-right {
     text-align: left;
     clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 20%);

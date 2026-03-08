@@ -330,7 +330,7 @@ h1 {
   padding: 16px 18px;
   display: grid;
   gap: 10px;
-  text-align: left;
+  text-align: center;
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
   width: min(100%, 560px);
   min-height: 0;
@@ -353,7 +353,8 @@ h1 {
 }
 
 .doc-card .btn {
-  margin-top: 2px;
+  margin-top: 6px;
+  justify-self: center;
 }
 
 @media (min-width: 700px) {
@@ -403,15 +404,15 @@ h1 {
   }
 
   .doc-card {
-    width: min(100%, 660px);
+    width: min(100%, 480px);
   }
 
   .doc-card--two {
-    margin-left: 72px;
+    margin-left: 60px;
   }
 
   .doc-card--three {
-    margin-left: 144px;
+    margin-left: 120px;
   }
 }
 
